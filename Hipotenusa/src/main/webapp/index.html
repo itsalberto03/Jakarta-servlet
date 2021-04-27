@@ -1,0 +1,29 @@
+<!-- Integrantes: Adalberto Gonzalez Cuesta -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Hola!!!</h1>
+        <form action="Hipotenusa" method="get">
+            <p>Por favor digita los catetos para calcular la hipotenusa</p>
+            <p>Cateto A</p>
+            <input type="number" id="hipotenusa1" name="hipotenusa1" onkeypress='return Validacion(event)'required/>
+            <p>Cateto B</p>
+            <input type="number" id="hipotenusa2" name="hipotenusa2" onkeypress='return Validacion(event)'required/>
+            <input type="submit" value="Calcular">
+        </form>
+        <script>
+        function Validacion(event) {
+        if(event.charCode >= 48 && event.charCode <= 57){
+        return true;
+        }else{
+        alert("'[ERROR] !El campo debe tener un valor numerico!");
+        return false;
+}
+}
+        </script>
+    </body>
+</html>

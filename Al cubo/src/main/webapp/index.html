@@ -1,0 +1,26 @@
+<!-- Integrantes: Adalberto Gonzalez Cuesta -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Hola!!!</h1>
+        <form action="Admin" method="get">
+            <p>Por favor digita un numero para calcularlo al cubo</p>
+            <input type="text" id="numero" name="cubo" onkeypress='return Validacion(event)'required/>
+            <input type="submit" value="Calcular">
+        </form>
+        <script>
+        function Validacion(event) {
+        if(event.charCode >= 48 && event.charCode <= 57){
+        return true;
+        }else{
+        alert("'[ERROR] !El campo debe tener un valor numerico!");
+        return false;
+}
+}
+        </script>
+    </body>
+</html>
